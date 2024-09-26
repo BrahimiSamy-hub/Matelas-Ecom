@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { IoCartOutline } from 'react-icons/io5'
 import { useTranslation } from 'react-i18next'
 import { yourlogo, MenuSvg } from '../assets'
 import { navigation } from '../constant'
 import { useCart } from '../context/CartContext'
+import { MdLanguage } from 'react-icons/md'
 
 const Navbar = () => {
   const { toggleCart, cartItems } = useCart()
@@ -69,7 +70,7 @@ const Navbar = () => {
                     isActive
                       ? 'text-black font-bold after:w-full '
                       : 'text-black after:w-0'
-                  } 
+                  }
                   after:absolute after:left-0 after:bottom-0  after:h-[2px] after:bg-black after:transition-all after:duration-300 group-hover:after:w-full`
                 }
               >

@@ -7,7 +7,7 @@ const Home = () => {
     <div className='h-screen'>
       <Hero />
       <Categories />
-      <Featured />
+      {/* <Featured /> */}
       <Footer />
     </div>
   )
